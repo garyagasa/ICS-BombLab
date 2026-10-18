@@ -1,0 +1,31 @@
+./example:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+Disassembly of section .plt:
+
+Disassembly of section .plt.sec:
+
+Disassembly of section .text:
+
+0000000000401136 <calculate>:
+  401136:	endbr64
+  40113a:	push   %rbp
+  40113b:	mov    %rsp,%rbp
+  40113e:	mov    %edi,-0x14(%rbp)
+  401141:	mov    -0x14(%rbp),%edx
+  401144:	mov    %edx,%eax
+  401146:	add    %eax,%eax
+  401148:	add    %edx,%eax
+  40114a:	add    $0x7,%eax
+  40114d:	mov    %eax,-0x4(%rbp)
+  401150:	cmpl   $0x14,-0x4(%rbp)
+  401154:	jle    40115b <calculate+0x25>
+  401156:	mov    -0x4(%rbp),%eax
+  401159:	jmp    401160 <calculate+0x2a>
+  40115b:	mov    $0x0,%eax
+  401160:	pop    %rbp
+  401161:	ret
+
+Disassembly of section .fini:
